@@ -21,7 +21,7 @@ resource "aws_dynamodb_table" "basic-dynamodb-table"{
 
 terraform {
   backend "s3" {
-    bucket = "tfstate112"
+    bucket = "<bucket-name>"
     key    = "mystate.tfstate"
     region = "ap-south-1"
     profile = ""
