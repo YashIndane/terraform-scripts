@@ -24,7 +24,7 @@ resource "aws_dynamodb_table" "basic-dynamodb-table"{
 terraform {
   backend "s3" {
     bucket = "<bucket-name>"
-    key    = "mystate.tfstate"
+    key    = "<file-name>.tfstate"
     region = "ap-south-1"
     profile = ""
     
@@ -36,7 +36,7 @@ terraform {
 
 resource "aws_instance" "os34"{
 
- ami = "ami-0de1d9ec99cd6630c"
+ ami = ""
  instance_type = "t2.small"
  tags = {
      Name = "hadoop-os-20"
