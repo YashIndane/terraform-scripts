@@ -1,0 +1,7 @@
+first run the dynamo.tf file by commenting the ec2.tf file completely. Also comment the line 
+dynamodb_table = .... in dynamo.tf    (first do terraform init)  (this file will first create the backend configuration with S3 and the dynamodb_table also created)
+
+now uncomment the line dynamodb_table = .... and run the file again
+(this will confugure the dynammodb_table for lock file)
+
+now entirely comment the dynamo.tf file and run the ec2.tf file, by uncommentting it.
